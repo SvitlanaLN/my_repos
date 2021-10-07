@@ -50,6 +50,9 @@ namespace Person_namespace
 
         }
 
+        public virtual void SetNewInfo()
+        {
+        }
         public override string ToString() { return "\nName: "+ name+
                                             "\nBirthday date: "+ Birth_date+
                                             "\nAge: " + GetAge(DateTime.Today) + " years" +

@@ -27,7 +27,7 @@ namespace Person_namespace
            { return base.ToString()+"\nWeigth: " + Weight + " kg"+ "\nHeight: "+ Height+ " sm";}
 
 
-        public void SetNewInfo()
+        public override void SetNewInfo()
         {
                 Console.Write("Enter properties of a child:\nWeight: ");
                 Weight = Double.Parse(Console.ReadLine()).ToString();

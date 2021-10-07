@@ -25,7 +25,7 @@ namespace Person_namespace
         { return base.ToString() + "\nExperience: " + Expirience + " years" + "\nJob_place: " + Job; }
 
 
-        public void SetNewInfo()
+        public override void SetNewInfo()
         {
             Console.Write("Enter properties Working_person:\nExperience: ");
             Expirience = Double.Parse(Console.ReadLine()).ToString();
