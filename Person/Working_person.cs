@@ -1,11 +1,11 @@
 ﻿using System;
 namespace Person_namespace
 {
-    public class Working_person : Person
+    public class Working_person : Person, IAdult
     {
         private double experience;
         private string job;
-     //   private static string SoftServe;
+        private string passport;
 
         public string Expirience
         {
@@ -15,15 +15,17 @@ namespace Person_namespace
 
         public string Job { get; set; }
 
-        public Working_person(string name, DateTime birth_date, double E, string G) : base(name, birth_date)
+        public string Passport { get; set; }
+
+        public Working_person(string name, DateTime birth_date, double exp, string job_place, string passp): base(name, birth_date)
         {
-            Expirience = E.ToString();
-            Job = G.ToString();
+            Expirience = exp.ToString();
+            Job = job_place;
+            Passport = passp;
         }
 
         public override string ToString()
-        { return base.ToString() + "\nExperience: " + Expirience + " years" + "\nJob_place: " + Job; }
-
+        { return base.ToString() + "\nExperience: " + Expirience + " years" + "\nJob_place: " + Job +PrintPassport(Passport); }
 
         public override void SetNewInfo()
         {
@@ -31,13 +33,20 @@ namespace Person_namespace
             Expirience = Double.Parse(Console.ReadLine()).ToString();
             Console.Write("Job_place: ");
             Job = Console.ReadLine();
+            Console.Write("Passport: ");
+            Passport = Console.ReadLine();
         }
 
         public static Working_person ConvertToWorking_person(Person person)
         {
-            Working_person obj_working_person = new Working_person(person.name, DateTime.Parse(person.Birth_date), 10, "SoftServe");
+            Working_person obj_working_person = new Working_person(person.name, DateTime.Parse(person.Birth_date), 10, "SoftServe", "SN 000000");
             return obj_working_person;
         }
 
-    }
+        public string PrintPassport(string serial_passport)
+        {
+             return "\nPassport: " + serial_passport;
+        }
+
+}
 }
