@@ -1,0 +1,12 @@
+D:\C#\Person\bin\Debug\People.exe
+D:\C#\Person\bin\Debug\People.pdb
+D:\C#\Person\obj\Debug\Person.csprojAssemblyReference.cache
+D:\C#\Person\obj\Debug\Person.csproj.CoreCompileInputs.cache
+D:\C#\Person\obj\Debug\People.exe
+D:\C#\Person\obj\Debug\People.pdb
+D:\Person\obj\Debug\Person.csproj.AssemblyReference.cache
+D:\Person\obj\Debug\Person.csproj.CoreCompileInputs.cache
+D:\Person\obj\Debug\People.exe
+D:\Person\obj\Debug\People.pdb
+D:\Person\bin\Debug\People.exe
+D:\Person\bin\Debug\People.pdb
